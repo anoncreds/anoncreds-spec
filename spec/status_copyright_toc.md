@@ -8,7 +8,7 @@ The proposal for v1.0 has partly been worked out at the [RWOT2022](https://reboo
 
 Information about the current status of this document, any errata,
 and how to provide feedback on it may be obtained at
-[https://github.com/hyperledger/anoncreds-spec](https://github.com/hyperledger/anoncreds-spec).
+[https://github.com/anoncreds/anoncreds-spec](https://github.com/anoncreds/anoncreds-spec).
 
 ## Copyright Notice
 

@@ -4,19 +4,19 @@
 
 This repository contains the source content for the AnonCreds open
 specification, a part of the [Hyperledger AnonCreds
-Project](https://wiki.hyperledger.org/display/anoncreds). This open
+Project](https://lf-hyperledger.atlassian.net/wiki/spaces/ANONCREDS/overview). This open
 specification is based on the open source AnonCreds verifiable credential
 implementation in the Hyperledger AnonCreds GitHub repository
-[anoncreds-rs](https://github.com/hyperledger/anoncreds-rs). That implementation
+[anoncreds-rs](https://github.com/anoncreds/anoncreds-rs). That implementation
 was originally part of the [Hyperledger
-Indy](https://www.hyperledger.org/projects/hyperledger-indy) open source
+Indy](https://www.lfdecentralizedtrust.org/projects/hyperledger-indy) open source
 project, accepted into Hyperledger in 2017. The extensive use of AnonCreds
 around the world has made it a de facto standard, and the AnonCreds Working
 Group (hyperledger) has been established to formalize the specification and
 place it on a standards track.
 
 - This work is being conducted under the [Community Specification License v1.0](1._Community_Specification_License-v1.md)
-- The draft specification can be found here: [https://hyperledger.github.io/anoncreds-spec/](https://hyperledger.github.io/anoncreds-spec/)
+- The draft specification can be found here: [https://anoncreds.github.io/anoncreds-spec/](https://anoncreds.github.io/anoncreds-spec/)
 - The source specification documents can be found here: [Specification Source](/spec)
 
 This repository contains guidelines for [contributing](#contributions) to the specification and submitting [edits via GitHub pull requests](/EditingTheSpec.md).
@@ -29,7 +29,7 @@ this repository. The <tl;dr> summary is the following:
 The open source AnonCreds implementations
 ([here](https://github.com/hyperledger/indy-sdk/blob/master/libindy/src/api/anoncreds.rs)
 in [Hyperledger
-Indy](https://www.hyperledger.org/projects/hyperledger-indy) and [here](https://github.com/hyperledger/anoncreds-rs)) in [Hyperledger AnonCreds](https://wiki.hyperledger.org/display/anoncreds)
+Indy](https://www.lfdecentralizedtrust.org/projects/hyperledger-indy) and [here](https://github.com/anoncreds/anoncreds-rs)) in [Hyperledger AnonCreds](https://lf-hyperledger.atlassian.net/wiki/spaces/ANONCREDS/overview)
 provide
 capabilities that many see as important for digital identity use cases in
 particular, and verifiable data in general. These features include:

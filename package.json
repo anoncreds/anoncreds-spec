@@ -6,7 +6,7 @@
   "license": "Apache 2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hyperledger/anoncreds-spec"
+    "url": "git://github.com/anoncreds/anoncreds-spec"
   },
   "dependencies": {
     "spec-up": "git+https://github.com/andrewwhitehead/spec-up.git#fix-katex-path"

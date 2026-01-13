@@ -10,7 +10,7 @@
 
 [Hyperledger Indy]: https://www.hyperledger.org/projects/hyperledger-indy
 [W3C DID Core specification]: https://www.w3.org/TR/did-core/
-[AnonCreds Methods Registry]: https://hyperledger.github.io/anoncreds-methods-registry/
+[AnonCreds Methods Registry]: https://anoncreds.github.io/anoncreds-methods-registry/
 
 [[def: AnonCreds Objects, AnonCreds objects]]
 

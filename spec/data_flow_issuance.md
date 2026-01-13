@@ -195,7 +195,7 @@ The [[ref: holder]] constructs the following [[ref: Credential Request]] JSON st
 * `nonce`: Used for preventing replay attacks and authentication between protocol steps. The [[ref: holder]] creates an 80 bit nonce in the request which is a randomly 
 generated number.
 
-[legacy Indy AnonCreds Method]: https://hyperledger.github.io/anoncreds-methods-registry/#hyperledger-indy-legacy-anoncreds-method
+[legacy Indy AnonCreds Method]: https://anoncreds.github.io/anoncreds-methods-registry/#hyperledger-indy-legacy-anoncreds-method
 
 Once constructed, the [[ref: holder]] sends the [[ref: Credential Request]] to the [[ref: issuer]], who then can reply to the [[ref: holder]] by sending an issued credential.
 
@@ -282,7 +282,7 @@ The values in the proof are generated as follows:
   where
 
   * $u$ is described above.
-  * $\tilde{u} = s^{\tilde{v}'} \times r_{linksecret}^{\tilde{A_l}}\ mod\ n$ where $\tilde{v}'$ is randomly selected 3488-bit value and $\tilde{A_l}$ is 593-bit value by reference [_Anonymous credentials with type-3 revocation_ by Dmitry Khovratovisch, Michael Lodder and Cam Parra](https://github.com/hyperledger/anoncreds-spec/blob/main/spec/ursaAnonCreds.pdf)
+  * $\tilde{u} = s^{\tilde{v}'} \times r_{linksecret}^{\tilde{A_l}}\ mod\ n$ where $\tilde{v}'$ is randomly selected 3488-bit value and $\tilde{A_l}$ is 593-bit value by reference [_Anonymous credentials with type-3 revocation_ by Dmitry Khovratovisch, Michael Lodder and Cam Parra](https://github.com/anoncreds/anoncreds-spec/blob/main/spec/ursaAnonCreds.pdf)
   * $n_0$ is the nonce value.
 * `v_dash_cap`: $\hat{v'} \leftarrow \tilde{v'} + cv'$, where $v'$ is the blinding factor and $\tilde{v'}$ is a 3488-bit random number.
 * `m_caps`: $\{\hat{m_i} \leftarrow \tilde{m_i} + cm_i\}_{i \in A_h}$, where $A_h$ is the set of all hidden attributes.

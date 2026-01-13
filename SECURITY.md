@@ -1,21 +1,21 @@
-# Hyperledger AnonCreds Security Policy
+# LF Decentralized Trust AnonCreds Security Policy
 
 ## About this document
 
 This document defines how security vulnerability reporting is handled in the
-Hyperledger AnonCreds project. The approach aligns with the [Hyperledger
+LF Decentralized Trust AnonCreds project. The approach aligns with the [LFDT
 Foundation's Security Vulnerability Reporting
 policy](https://toc.hyperledger.org/governing-documents/security.html). Please
 review that document to understand the basis of the security reporting for
-Hyperledger AnonCreds.
+LF Decentralized Trust AnonCreds.
 
-The Hyperledger Security Vulnerability policy borrows heavily from the
+The LF Decentralized Trust Security Vulnerability policy borrows heavily from the
 recommendations of the OpenSSF Vulnerability Disclosure working group. For
 up-to-date information on the latest recommendations related to vulnerability
 disclosures, please visit the [GitHub of that working
 group](https://github.com/ossf/wg-vulnerability-disclosures).
 
-If you are already familiar with the security policies of Hyperledger AnonCreds, and
+If you are already familiar with the security policies of AnonCreds, and
 ready to report a vulnerability, please jump to [Report
 Intakes](#report-intakes).
 
@@ -23,8 +23,7 @@ Intakes](#report-intakes).
 
 This document has the following sections:
 
-- [Hyperledger AnonCreds Security Policy](#hyperledger-project-security-policy)
-  - [Instructions](#instructions)
+- [LF Decentralized Trust AnonCreds Security Policy](#lf-decentralized-trust-anoncreds-security-policy)
   - [About this document](#about-this-document)
   - [Outline](#outline)
   - [What Is a Vulnerability Disclosure Policy?](#what-is-a-vulnerability-disclosure-policy)
@@ -45,27 +44,27 @@ vulnerability disclosure policy explains how this process functions from the
 perspective of the project.
 
 This vulnerability disclosure policy explains the rules and guidelines for
-Hyperledger AnonCreds. It is intended to act as both a reference for
+the AnonCreds Project. It is intended to act as both a reference for
 outsiders–including both bug reporters and those looking for information on the
-project’s security practices–as well as a set of rules that maintainers and
+project's security practices–as well as a set of rules that maintainers and
 contributors have agreed to follow.
 
 ## Security Team
 
-The current Hyperledger AnonCreds security team is:
+The current AnonCreds Project security team is:
 
-| Name            | Email ID                        | Discord ID | Area/Specialty         |
-| --------------- | ------------------------------- | ---------- | ---------------------- |
-| Stephen Curran  | swcurran@cloudcompass.ca        |            | AnonCreds Applications |
-| Mike Lodder     | redmike7@gmail.com              |            | Cryptography           |
-| Hart Montgomery | hmontgomery@linuxfoundation.org | <>         | Cryptograhy            |
-| Sam Curren      | sam@indicio.tech                | <>         | AnonCreds Applications |
+| Name             | Email ID                        | Discord ID      | Area/Specialty         |
+| ---------------- | ------------------------------- | --------------- | ---------------------- |
+| Stephen Curran   | swcurran@cloudcompass.ca        | swcurran        | cp ../to               |
+| Hart Montgomery  | hmontgomery@linuxfoundation.org | hartm           | Cryptography, Security |
+| Mike Lodder      | redmike7@gmail.com              | mikelodder      | Cryptography           |
+| Andrew Whitehead | cywolf@gmail.com                | andrewwhitehead | Cryptography, Security |
 
-The security team for Hyperledger AnonCreds must include at least three project
+The security team for the AnonCreds Project must include at least three AnonCreds
 Maintainers that agree to carry out the following duties and responsibilities.
 Members are added and removed from the team via approved Pull Requests to this
 repository. For additional background into the role of the security team, see
-the [People Infrastructure] section of the Hyperledger Security Policy.
+the [People Infrastructure] section of the LF Decentralized Trust Security Policy.
 
 [People Infrastructure]: https://toc.hyperledger.org/governing-documents/security.html#people-infrastructure
 
@@ -83,28 +82,28 @@ halted. If the report is a regular bug (but not a security vulnerability), the
 reporter should be informed (if necessary) of the regular process for reporting
 issues.
 
-3. Some issues may require more time and resources to correct. If a particular
+1. Some issues may require more time and resources to correct. If a particular
 report is complex, discuss an embargo period with the reporter during which
 time the report will not be publicly disclosed. The embargo period should be
 negotiated with the reporter and must not be longer than 90 days.
 
-4. If necessary, create a private patch development infrastructure for the issue
-   by emailing the [Hyperledger Community Architects].
+1. If necessary, create a private patch development infrastructure for the issue
+   by emailing the [security@lists.lfdecentralizedtrust.org].
 
-[Hyperledger Community Architects]: mailto:community-architects@hyperledger.org
+[security@lists.lfdecentralizedtrust.org]: mailto:security@lists.lfdecentralizedtrust.org
 
-5. Request a CVE for the issue (see the [CNA/CVE Reporting](#cnacve-reporting)
+1. Request a CVE for the issue (see the [CNA/CVE Reporting](#cnacve-reporting)
    section).
 
-6. Decide a date for the public release of the vulnerability report, the date
+2. Decide a date for the public release of the vulnerability report, the date
    the embargo period ends.
 
-7. If applicable, notify members of the embargo list of the vulnerability,
+3. If applicable, notify members of the embargo list of the vulnerability,
 upcoming patch and release, as described above.
 
-8. Publish a new (software) release in which the vulnerability is addressed.
+1. Publish a new (software) release in which the vulnerability is addressed.
 
-9. Publicly disclose the issue within 48 hours after the release via a
+2. Publicly disclose the issue within 48 hours after the release via a
 GitHub security advisory (see the [(GitHub) Security
 Advisories](#github-security-advisories) section for details).
 
@@ -117,13 +116,12 @@ with invited participants added to the discussion.
 
 ## Report Intakes
 
-Hyperledger AnonCreds has the following ways to submit security
+AnonCreds has the following ways to submit security
 vulnerabilities. While the security team members will do their best to
 respond to bugs disclosed in all possible ways, it is encouraged for bug
 finders to report through the following approved channels:
 
-- Email the [Hyperledger Foundation security
-list](mailto:security@lists.hyperledger.org): To report a security issue, please
+- Email the [security@lists.lfdecentralizedtrust.org]: To report a security issue, please
 send an email with the name of the project/repository, a description of the issue, the
 steps you took to create the issue, affected versions, and if known,
 mitigations. If in triaging the email, the security team determines the issue may be
@@ -138,33 +136,33 @@ infrastructure in GitHub.
 
 ## CNA/CVE Reporting
 
-Hyperledger AnonCreds maintains a list of **Common Vulnerabilities and Exposures
+AnonCreds maintains a list of **Common Vulnerabilities and Exposures
 (CVE)** and uses GitHub as its **CVE numbering authority (CNA)** for issuing
 CVEs.
 
 ## Embargo List
 
-Hyperledger AnonCreds maintains a private embargo list. If you wish to
-be added to the embargo list, please email the [Hyperledger Foundation security
-mailing list](mailto:security@lists.hyperledger.org), including the project name
-(Hyperledger AnonCreds) and reason for being added to the embargo list. Requests
-will be assessed by the Hyperledger AnonCreds security team in conjunction with the
-appropriate Hyperledger Staff, and a decision will be made to accommodate or not
-the request.
+AnonCreds does **NOT** currently maintain a private embargo list.
 
-For more information about the embargo list, please see the [Embargo List
-section of the Hyperledger Security
+If you wish to be added to the embargo list, please email the [security@lists.lfdecentralizedtrust.org] mailing list,
+including the project name (AnonCreds) and reason for being added
+to the embargo list. Requests will be assessed by the AnonCreds
+security team in conjunction with the appropriate LF Decentralized Trust Staff, and a
+decision will be made to accommodate or not the request.
+
+For more information about embargo lists, please see the [Embargo List section
+of the Hyperledger Security
 Policy](https://toc.hyperledger.org/governing-documents/security.html#embargo-list).
 
 ## (GitHub) Security Advisories
 
-Hyperledger AnonCreds uses GitHub Security Advisories to manage the public
+AnonCreds uses GitHub Security Advisories to manage the public
 disclosure of security vulnerabilities.
 
 ## Private Patch Deployment Infrastructure
 
 In creating patches and new releases that address security vulnerabilities,
-Hyperledger AnonCreds uses the private development features of GitHub for security
-vulnerabilities. GitHub has [extensive
+the AnonCreds Project **MAY** use the private development features of GitHub for
+security vulnerabilities. GitHub has [extensive
 documentation](https://docs.github.com/en/code-security/security-advisories/repository-security-advisories)
 about these features.

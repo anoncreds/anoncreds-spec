@@ -184,7 +184,7 @@ The following describes the process for generating the [[ref: Credential Definit
 - Compute $Z \leftarrow S^{x_z}(mod \, n)$, and $\{R_i = S^{x_{R_i}}(mod \, n)\}_{1\leq i\leq l}$
 - Credential Definition public key is $P_k = ( n, S, Z, \{R_i\}_{i\leq i\leq l} )$ and the private key is $s_k = (p, q)$
 
-[Here](https://github.com/hyperledger/anoncreds-clsignatures-rs/blob/32398a67a4bdacf327c12eb4ecf5234857cc0a24/src/issuer.rs#L61) is the rust implementation of the above process.
+[Here](https://github.com/anoncreds/anoncreds-clsignatures-rs/blob/32398a67a4bdacf327c12eb4ecf5234857cc0a24/src/issuer.rs#L61) is the rust implementation of the above process.
 
 The [[ref: Private Credential Definition]] produced by the generation process has the following format:
 
@@ -344,7 +344,7 @@ order $q$, we write $g^k$ to mean the point $k \cdot P$.
 ##### Private Revocation Keys
 A [[ref: Private Credential Definition]] with revocation enabled has the following format. In this, the
 details of the `p_key` element are omitted, as they are the same as was covered
-in [the section above](generating-a-credential-definition-without-revocation-support).  The implementation can be found in the [anoncreds-clsignatures-rs](https://github.com/hyperledger/anoncreds-clsignatures-rs/blob/main/src/types.rs) repository.
+in [the section above](generating-a-credential-definition-without-revocation-support).  The implementation can be found in the [anoncreds-clsignatures-rs](https://github.com/anoncreds/anoncreds-clsignatures-rs/blob/main/src/types.rs) repository.
 
 ```json
 {
@@ -370,7 +370,7 @@ The value $q$ is the order of the group $G_1=E(\mathbb{F}_p)$ on the curve BN254
 
 The issuer additionally holds a secret value `gamma` used to construct
 the accumulator.  This is inside the `RevocationKeyPrivate` object in
-[anoncreds-clsignatures-rs](https://github.com/hyperledger/anoncreds-clsignatures-rs.git),
+[anoncreds-clsignatures-rs](https://github.com/anoncreds/anoncreds-clsignatures-rs.git),
 which is separate from the `CredentialRevocationPrivateKey` object
 that stores `sk` and `x`.
 
@@ -541,7 +541,7 @@ Detailed process for tails file generation:
 - Repeat for all the attributes from index $1$ to $L$, by calculating $([\gamma], [\gamma^2], [\gamma^3], ...[\gamma^L], [\gamma], [\gamma^{L+2}], [\gamma^{L+3}], ..., [\gamma^{2L}])$. Note that Instead of inserting $[\gamma^{L+1}]$ in the sequence, insert the value $[\gamma]$ (the first value in the sequence) in its place, and then continue with $[\gamma^{L+2}]$ and on to $[\gamma^{2L}]$. $[\gamma^{L+1}]$ is not used by holders generating the [[ref: Non-Revocation Proof]] and a dummy value is inserted in its place.
 - Close the file buffer.
 
-Relevant links: [Anoncreds-rs repository](https://github.com/hyperledger/anoncreds-rs/blob/9c915bb77bc4e033cc6d28d45e330ee5bda26211/src/services/tails.rs#LL148C1-L148C37), [Anoncreds-CLSignatures repository](https://github.com/hyperledger/anoncreds-clsignatures-rs/blob/f1ae666656054cd73fe765928c0dada64ef21d87/src/mod.rs#L517)
+Relevant links: [Anoncreds-rs repository](https://github.com/anoncreds/anoncreds-rs/blob/9c915bb77bc4e033cc6d28d45e330ee5bda26211/src/services/tails.rs#LL148C1-L148C37), [Anoncreds-CLSignatures repository](https://github.com/anoncreds/anoncreds-clsignatures-rs/blob/f1ae666656054cd73fe765928c0dada64ef21d87/src/mod.rs#L517)
 :::
 
 The process for hashing the [[ref: TAILS_FILE]] is as follows:

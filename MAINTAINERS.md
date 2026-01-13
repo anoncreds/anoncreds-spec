@@ -62,7 +62,7 @@ maintainer to emeritus status. This can occur in the following situations:
 
 - Resignation of a maintainer.
 - Violation of the [Hyperledger Code of
-  Conduct](https://wiki.hyperledger.org/display/HYP/Hyperledger+Code+of+Conduct)
+  Conduct](https://lf-hyperledger.atlassian.net/wiki/spaces/HYP/pages/19595281/Hyperledger+Code+of+Conduct)
   warranting removal.
 - Inactivity.
   - A general measure of inactivity will be no commits or code review comments

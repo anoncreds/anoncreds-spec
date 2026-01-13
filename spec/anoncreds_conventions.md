@@ -4,7 +4,7 @@ Over the years of using Hyperledger AnonCreds, several conventions (listed here)
 in deploying AnonCreds. The conventions are not required in the current [AnonCreds implementation], but
 are necessary to follow for interoperability with other AnonCreds implementations.
 
-[AnonCreds implementation]: https://github.com/hyperledger/anoncreds-rs
+[AnonCreds implementation]: https://github.com/anoncreds/anoncreds-rs
 
 ### Encoding Credential Claims
 
